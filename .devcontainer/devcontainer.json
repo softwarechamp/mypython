@@ -1,0 +1,13 @@
+{
+  "name": "Flask Development Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:0-3.9",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "amazon.aws-q"
+  ],
+  "postCreateCommand": "pip install --user -r requirements.txt",
+  "remoteUser": "vscode"
+}
